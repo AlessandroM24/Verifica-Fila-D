@@ -1,0 +1,32 @@
+p {
+    font-size: 20px
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    font-size: 17px;
+}
+
+form {
+    display: table;
+}
+
+label, input {
+    display: table-cell;
+    padding-right: 15px;
+}
+
+p {
+    display: table-row;
+}
+
+#importoDonazione {
+    width: 50px;
+}
+
+textarea {
+    font-size: 16px;
+}

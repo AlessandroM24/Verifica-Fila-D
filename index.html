@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macaluso Verifica 01/03/2024</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h3>Modulo per le Donazioni</h3>
+
+    <form name="modulo">
+        <p>
+            <label for="nome">Nome completo *</label>
+            <input type="text" name="nome" id="nome">
+            <input type="text" name="cognome" id="cognome">
+        </p>
+        <br>
+        <p>
+            <label for="email">E-mail *</label>
+            <input type="text" name="email" id="email" placeholder="ex: myname@example.com">
+        </p>
+        <br>
+        <p>
+            <label for="prefisso">Numero di telefono *</label>
+            <input type="text" name="prefisso" id="prefisso">
+            <input type="text" name="numeroTelefono" id="numeroTelefono">
+        </p>
+        <br>
+        <p>
+            <p>
+                <p>Tipo di Donazione *</p>
+                <input type="radio" name="donazioni" id="donazioneAmorevole">
+                <label for="donazioneAmorevole">Donazione amorevole</label>
+            </p>
+            
+            <p>
+                <input type="radio" name="donazioni" id="donazioneAmpliamento">
+                <label for="donazioneAmpliamento">Ampliamento dell'edificio</label>
+            </p>
+            
+            <p>
+                <input type="radio" name="donazioni" id="donazioneTantum">
+                <label for="donazioneTantum">Donazione una tantum</label>
+            </p>
+        </p>
+        <br>
+        <p>
+            <label for="importoDonazione">Importo donazione *</label>
+            <input type="tel" name="importoDonazione" id="importoDonazione" placeholder="USD">
+        </p>
+        <br>
+        <p>
+            <label for="commenti">Commenti</label>
+            <textarea name="commenti" id="commenti" cols="50" rows="10"></textarea>
+            
+        </p>
+        <br>
+        <button onclick="validazione(event)">Invia Dati</button>
+        <button type="reset">Cancella</button>
+    </form>
+
+    <br>
+    <p id="risultato"></p>
+    <p id="risulatoStampato"></p>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
